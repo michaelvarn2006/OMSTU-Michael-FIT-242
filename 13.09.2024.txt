@@ -1,0 +1,51 @@
+1. На вход подается два значения а и б необходимо написать программу меняющую местами две переменных не используя третью
+
+2. На вход подается 2 переменных необходимо выдать минимальное значение из этих двух переменных
+
+3. Третья задача на грядки
+
+1.
+
+using System;
+class HelloWorld {
+static void Main() {
+int a,b;
+a = Convert.ToInt32(Console.ReadLine());                          
+b = Convert.ToInt32(Console.ReadLine());
+a = a + b;
+b = a - b;
+a = a - b;
+Console.WriteLine(a);
+Console.WriteLine(b);
+}
+}
+
+2.
+
+using System;
+class HelloWorld {
+static void Main() {
+int a, b, minim;
+Console.WriteLine("Введите a");
+a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите b");
+b = Convert.ToInt32(Console.ReadLine());
+minim = ((a + b) - Math.Abs((a-b)))/2;
+Console.WriteLine(minim);
+}
+}
+
+3.
+
+using System;
+class HelloWorld {
+static void Main() {
+int l,m,k,n,res;
+l= Convert.ToInt32(Console.ReadLine());
+m = Convert.ToInt32(Console.ReadLine());                         
+k = Convert.ToInt32(Console.ReadLine());
+n = Convert.ToInt32(Console.ReadLine());                       
+res = k*n*2+m*2*n+l*2*n+((n-1)*n)*l;
+Console.WriteLine(res);
+}
+}
